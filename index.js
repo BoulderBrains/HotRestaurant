@@ -19,15 +19,25 @@ var tableRes = [
 		uniqueID: ""
 	}
 ];
+
+var resInfo = [];
 	
 app.get('/testing', function (req, res) {
 	resInfo = res.json(tableRes);
+	console.log(resInfo);
 });
 
-
+console.log(resInfo);
 if (resInfo.length <= 5) {
 	// do app.post to /api/reservations
-	app.post("api/reservations");
+	app.post("api/reservations", function( req, res) {
+		var newReservation = req.body;
+
+		// newReservation.routeName = newReservation.uniqueID;
+		console.log(newReservation);
+		tableRes.push(newReservation);
+		res.json(newReservation);
+	});
 } else {
 	//do app.post to /api/waitlist
 	app.post("api/waitlist");
