@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+}
+
+h1.display-4 {
+    text-align: center;
+    font-size: 70px;
+    font-weight: 150px;
+}
+
+p.lead {
+    text-align: center;
+    font-size: 25px;
+}
+
+.container1 {
+    text-align: left;
+    border: solid, black, 5px;
+}
+
+.container {
+    border: solid, black, 5px;
+}
