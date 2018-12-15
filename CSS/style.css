@@ -1,11 +1,12 @@
 body {
     text-align: center;
+    background-image: url("../images/plate2.jpg");
 }
 
 h1.display-4 {
     text-align: center;
     font-size: 70px;
-    font-weight: 150px;
+    font-weight: 100%;
 }
 
 p.lead {
@@ -15,12 +16,33 @@ p.lead {
 
 .container1 {
     text-align: left;
-    border: solid, black, 5px;
+    background-color: lightgrey;
+    opacity: 0.9;
+    margin: 5px, auto;
+    margin-bottom: 55px;
+    
+    margin: auto;
 }
 
-/* .container {
-    border: solid, black, 5px;
-} */
-#button {
-    margin-top: 20px;
+.container2 {
+    text-align: left;
+    opacity: 0.9;
+    margin: 5px, auto;
+    margin-bottom: 55px;
+    width: 85%;
+    margin: auto;
+}
+
+.container {
+    margin-bottom:45px;
+    margin-top: 45px;
+    
+}
+
+hr {
+    width: 70%;
+}
+
+#btn1 {
+    margin-bottom: 20px;
 }
