@@ -28,6 +28,18 @@ app.get('/testing', function (req, res) {
 	console.log(resInfo);
 });
 
+app.get("/", function(req, res) {
+    res.sendFile(path.join(__dirname, "index.html"));
+  });
+
+app.get('/reservation', function(req, res) {
+    res.sendFile(path.join(__dirname, "index3.html"));
+})
+
+app.get('/table', function(req, res) {
+    res.sendFile(path.join(__dirname, "index2.html"));
+})
+
 console.log(resInfo);
 if (resInfo.length <= 5) {
 	// do app.post to /api/reservations
