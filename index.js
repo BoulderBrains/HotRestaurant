@@ -22,7 +22,16 @@ var tableRes = [
 	
 app.get('/testing', function (req, res) {
 	resInfo = res.json(tableRes);
-})
+});
+
+
+if (resInfo.length <= 5) {
+	// do app.post to /api/reservations
+	app.post("api/reservations");
+} else {
+	//do app.post to /api/waitlist
+	app.post("api/waitlist");
+}
 
 // Starts the server to begin listening
 app.listen(3000, function () {
